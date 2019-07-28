@@ -1,0 +1,239 @@
+
+/* Coolors Exported Palette - coolors.co/1ea896-0091b0-4c5454-ff7a59-fff9f4 */
+
+$primary: #1DB58E;
+$font-color: rgba(46,46,46,0.70);
+$heading-color: #2E2E2E;
+$light-green: rgba(166,232,195,0.2);
+$alt-bg: rgba(247, 247, 247, 1);
+
+
+html,body {
+  height: 100%;
+  color: $font-color;
+  font-family: "proxima-nova",sans-serif;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+html,body {
+  font-size: 18px;
+}
+}
+
+body {
+  margin: 0;
+  font-family: "proxima-nova",sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+  color: $heading-color;
+  font-family: proxima-nova, sans-serif; 
+  font-weight: 700; 
+  font-style: normal;
+  letter-spacing: 0.4px;
+}
+p {
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.4px;
+}
+
+a {
+  letter-spacing: 0.4px;
+  border-bottom:2px solid  rgba(0, 210, 128, .2);
+  color: $primary;
+  transition: 0.35s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+li {
+text-rendering: optimizeLegibility;
+letter-spacing: 0.4px;
+}
+
+a:hover {
+  text-decoration: none;
+  background: rgba(0, 210, 128, .2);
+  border-bottom-color: rgba(24,107,255,0);
+}
+
+.skeleton {
+display: grid;
+grid-gap: 0;
+height: 100%;
+grid-template-columns:1fr;
+grid-template-areas:
+          "header"
+          "main"
+          "footer";
+grid-template-rows: 80px 1fr auto;
+
+}
+
+/* Main */
+
+main {
+  grid-area: main;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (min-width: 768px) {
+
+  main {
+    grid-area: main;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+}
+
+
+header {
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+}
+
+
+/* Wrap */
+
+.wrap {
+  width: 100%;
+  max-width: 85rem;
+  margin: 0px auto;
+  width: calc(100% - 2em);
+}
+
+@media (min-width: 768px) {
+.wrap {
+ width: calc(100% - 4em);
+}
+}
+
+/* Section */
+
+.section {
+  padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+.section {
+  padding: 4rem 0;
+}
+}
+
+
+.d-flex {
+  display: flex;
+}
+
+.fd-row {
+  flex-direction: row;
+}
+
+.fd-column {
+  flex-direction: column;
+}
+
+.jc-centre {
+  justify-content: center;
+}
+
+.alt-bg {
+  background: $alt-bg;
+}
+
+
+
+
+/* Page Animations */
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+
+/* Button */
+
+ /*.button {
+  position: relative;
+  border-radius: 4px;
+  font: inherit;
+  background-color: $primary;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 4px 4px rgba(0,0,0,0.1),0 -100px 0 transparent inset;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.1),0 -100px 0 transparent inset;
+  font-weight: 700;
+  padding: 7px 14px;
+  font-size: 1.1rem;
+  -webkit-transition: box-shadow .2s ease-out;
+  -moz-transition: box-shadow .2s ease-out;
+  -o-transition: box-shadow .2s ease-out;
+  transition: box-shadow .2s ease-out;
+  border: 2px solid $primary;
+}
+
+.button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#000));
+    background: linear-gradient(to bottom, #fff 0%, #000 100%);
+    opacity: 0.05;
+}
+
+.button:hover,
+.button:active {
+  background-color: $primary;
+  -webkit-box-shadow: 0 4px 4px rgba(0,0,0,0.1),0 -100px 0 rgba(0,0,0,0.15) inset;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.1),0 -100px 0 rgba(0,0,0,0.15) inset;
+}
+
+.inverted {
+  background-color: #ECEDF2;
+  color: rgba(33, 38, 44, 1);
+  border: 0;
+}
+
+.hollow {
+  background: transparent;
+  border: 2px solid #1DB58E;
+  color: #1DB58E;
+}
+
+.inverted:hover,
+.inverted:active {
+
+}
+
+.cancel {
+  background-color: red;
+  color: white;
+  border: 1px solid transparent;
+}
+
+.cancel:hover,
+.cancel:active {
+  -webkit-box-shadow: 0 4px 4px rgba(0,0,0,0.1),0 -100px 0 rgba(0,0,0,0.15) inset;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.1),0 -100px 0 rgba(0,0,0,0.15) inset;
+  border: 1px solid transparent;
+  color: white;
+}
+
+@media (min-width: 768px) {
+.button {
+    padding: 12px 20px;
+}
+} */
